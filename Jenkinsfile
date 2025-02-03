@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/mohamedamine30/seafoodwebsite.git'
+                git branch: 'main', url: 'https://github.com/mohamedamine30/seafoodwebsite.git'
             }
         }
         stage('Build') {
